@@ -9,93 +9,128 @@
 	<title>Complaint form-OYO</title>
 </head>
 <body>
-	<div class="banner">
+	<div class="text-center logo">
+		<a href="index.html"><img src="/static/images/logo.png" alt=""></a>
+	</div>
 
+	<nav class="navbar navbar-expand-lg navbar-light bg-light">
+		<!-- <a class="navbar-brand" href="index.html"><img src="images/logo.png" alt="" class="nav-logo"></a> -->
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+
+		<div class="collapse navbar-collapse" id="navbarSupportedContent">
+			<ul class="nav nav-pills ml-auto">
+				<li class="nav-item">
+					<a class="nav-link" href="comments.html">Grievenaces</a>
+				</li>&nbsp;
+				<li class="nav-item">
+					<a class="nav-link" href="media.html">Videos/Media</a>
+				</li>
+			</ul>
+		</div>
+	</nav>
+	<div class="banner">
 		<div class="container">
+			<div class="text-center p-4">
+				<h3 class="text-white">Total amount <strong>OYO</strong> owes to Hoteliers : </h3>
+			</div>
 			<div class="row">
-				<div class="col-lg-4"></div>
-				<div class="col-lg-4 p-3 form">
-					<!-- <div class="top-login second">
-						<div class="border">
-							<span><i class="fa fa-user-circle" aria-hidden="true"></i></span>
+				<div class="col-lg-4 mt-5 site">
+					<div class="card">
+						<div class="card-header font-weight-bold">
+							Why Choose This Site??
 						</div>
-					</div> -->
+						<div class="card-body">
+							<ul>
+								<li> 1</li>
+								<li> 2</li>
+								<li> 3</li>
+								<li> 4</li>
+								<li> 5</li>
+								<li> 6</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-3"></div>
+				<div class="col-lg-5 p-3 form">
 					<h3 class="text-center">Register Your Complaint!!!</h3><br>
 					<form>
 						<div class="input-group mb-3">
 							<div class="input-group-prepend">
 								<span class="input-group-text" id="basic-addon1"><i class="fas fa-building"></i></span>
 							</div>
-							<input type="text" class="form-control" placeholder="Enter the Hotel Name" aria-label="Username" aria-describedby="basic-addon1">
+							<input type="text" class="form-control" placeholder="Enter the Hotel Name" aria-label="Username" aria-describedby="basic-addon1" name='hotel_name'>
 						</div>
 						<div class="input-group mb-3">
 							<div class="input-group-prepend">
 								<span class="input-group-text" id="basic-addon1"><i class="fas fa-building"></i></span>
 							</div>
-							<input type="number" class="form-control" placeholder="Enter the OYO ID" aria-label="Username" aria-describedby="basic-addon1">
+							<input type="number" class="form-control" placeholder="Enter the OYO ID" aria-label="Username" aria-describedby="basic-addon1" name='hotel-id'>
 						</div>
 						<div class="input-group mb-3">
 							<div class="input-group-prepend">
 								<span class="input-group-text" id="basic-addon1"><i class="fas fa-map-marker-alt"></i></span>
 							</div>
-							<textarea class="form-control" placeholder="Property Address" row="3"></textarea>
+							<textarea class="form-control" placeholder="Property Address" row="3" name='location'></textarea>
 						</div>
 						<div class="input-group mb-3">
 							<div class="input-group-prepend">
 								<span class="input-group-text" id="basic-addon1"><i class="fas fa-user"></i></span>
 							</div>
-							<input type="text" class="form-control" placeholder="Enter the Owner Name" aria-label="Username" aria-describedby="basic-addon1">
+							<input type="text" class="form-control" placeholder="Enter the Owner Name" aria-label="Username" aria-describedby="basic-addon1" name='owner_name'>
 						</div>
 						<div class="input-group mb-3">
 							<div class="input-group-prepend">
 								<span class="input-group-text" id="basic-addon1"><i class="fas fa-envelope"></i></span>
 							</div>
-							<input type="email" class="form-control" placeholder="Enter the Owner Email Id" aria-label="Username" aria-describedby="basic-addon1">
+							<input type="email" class="form-control" placeholder="Enter the Owner Email Id" aria-label="Username" aria-describedby="basic-addon1" name='email_id'>
 						</div>
 						<div class="input-group mb-3">
 							<div class="input-group-prepend">
 								<span class="input-group-text" id="basic-addon1"><i class="fas fa-phone-alt"></i></span>
 							</div>
-							<input type="number" class="form-control" placeholder="Enter the Owner contact number" aria-label="Username" aria-describedby="basic-addon1">
+							<input type="number" class="form-control" placeholder="Enter the Owner contact number" aria-label="Username" aria-describedby="basic-addon1" name='contact_number'>
 						</div>
 						<div class="input-group mb-3">
 							<div class="input-group-prepend">
 								<span class="input-group-text" id="basic-addon1"><i class="fas fa-rupee-sign"></i></span>
 							</div>
-							<input type="number" class="form-control" placeholder="How much OYO owes You?" aria-label="Username" aria-describedby="basic-addon1">
+							<input type="number" class="form-control" placeholder="How much OYO owes You?" aria-label="Username" aria-describedby="basic-addon1" name='oyo_amount'>
 						</div>
-						 <div class="form-row">
-						     <label for="inputEmail4">Do you want to continue with OYO?</label>
-                             <div class="form-group col-md-6">
-                                 <div class="input-group mb-3">
-                                     <div class="input-group-prepend">
-                                         <div class="input-group-text">
-                                             <input type="checkbox" aria-label="Checkbox for following text input">
-                                         </div>
-                                      </div>
-                                      <input type="text" class="form-control" placeholder="YES" aria-label="Text input with checkbox" disabled>
-                                 </div>
-                             </div>
-                             <div class="form-group col-md-6">
-                                 <div class="input-group mb-3">
-                                     <div class="input-group-prepend">
-                                         <div class="input-group-text">
-                                             <input type="checkbox" aria-label="Checkbox for following text input">
-                                         </div>
-                                      </div>
-                                      <input type="text" class="form-control" placeholder="NO" aria-label="Text input with checkbox" disabled>
-                                 </div>
-                             </div>
-                         </div>
+						<div class="form-row">
+							<label for="inputEmail4">Do you want to continue with OYO?</label>
+							<div class="form-group col-md-6">
+								<div class="input-group mb-3">
+									<div class="input-group-prepend">
+										<div class="input-group-text">
+											<input type="checkbox" aria-label="Checkbox for following text input" name='options'>
+										</div>
+									</div>
+									<input type="text" class="form-control" placeholder="YES" aria-label="Text input with checkbox" disabled>
+								</div>
+							</div>
+							<div class="form-group col-md-6">
+								<div class="input-group mb-3" >
+									<div class="input-group-prepend">
+										<div class="input-group-text">
+											<input type="checkbox" aria-label="Checkbox for following text input" name='options'>
+										</div>
+									</div>
+									<input type="text" class="form-control" placeholder="NO" aria-label="Text input with checkbox" disabled>
+								</div>
+							</div>
+						</div>
 						<div class="custom-file">
-                            <input type="file" class="custom-file-input" id="customFile">
-                           <label class="custom-file-label" for="customFile">Choose file</label>
-                       </div><br><br>
-					   <div class="input-group mb-3">
-							<textarea class="form-control" placeholder="Your Greivances(not more than 250characters)" rows="5" col="50"></textarea>
+							<input type="file" class="custom-file-input" id="customFile" name='oyo_form'>
+							<label class="custom-file-label" for="customFile">Last recons summary report</label>
+						</div><br><br>
+						<div class="input-group mb-3">
+							<textarea class="form-control" placeholder="Your Greivances" rows="5" col="50" name='comments'></textarea>
 						</div>
-						<div class=" mt-3 text-center">
-							<button type="button" class="btn btn-danger text-center">Submit</button>
+						<div class="mt-3 text-center">
+							<button type="submit" class="btn btn-danger text-center">Submit</button>
 						</div>
 					</form>
 

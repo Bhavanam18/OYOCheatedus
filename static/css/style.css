@@ -1,48 +1,76 @@
+body{
+    margin:0;
+    padding:0;
+}
+a:hover{
+
+    color:#fff;
+}
+.nav-link{
+    color:#fff;
+    font-weight:bold;
+    background:#ee2a24;
+}
+.logo{
+    background:#ee2a24;
+}
+
+.logo img{
+    width:35em;
+    height:10em;
+}
+.nav-logo{
+    width: 5em;
+    height:2em;
+}
 .banner{
-	background-image: url(../images/ban.jpg);
+	background-image: url(../static/images/ban.jpg);
 	background-size:cover;
 	background-attachment:fixed;
 	background-repeat:no-repeat;
-	height:150vh;
+	height:185vh;
 }
 .form{
 	background:#fff;
-	margin-top:5em;
+	margin-top:2em;
 	border-radius: 1em;
 }
-.top-login.second {
-    position: absolute;
-    right: 10em;
-    top: -4em;
-    border-radius: 2em;
+.nav-pills .nav-link.active, .nav-pills .show>.nav-link{
+    background:#ee2a24 !important;
 }
-.top-login {
-    text-align: center;
-    background: #dc3545;
-    transform: rotate(45deg);
-    -webkit-transform: rotate(45deg);
-    -o-transform: rotate(45deg);
-    -moz-transform: rotate(45deg);
-    -ms-transform: rotate(45deg);
-    width:75px;
-    height:75px;
-    margin: 0 auto;
-    border: 1px solid #fff;
-    list-style-type: none;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Media Queries */
+@media (min-width: 320px) and (max-width: 375px){
+    .logo img{
+        width:100%;
+    }
+    .border-left{
+        display:none;
+    }
 }
-.border {
-    border: 1px solid #ccc!important;
-    margin: 10px;
-    width: 56px;
-    height: 54px;
+@media (min-width: 375px) and (max-width:425px){
+    .logo img{
+        width:100%;
+    }
+    .border-left{
+        display:none;
+    }
 }
-i.fa.fa-user-circle, i.fa.fa-user-circle-o {
-    color: #fff;
-    font-size:25px;
-    padding: 16px;
-    transform: rotate(-45deg);
-    -webkit-transform: rotate(-45deg);
-    -o-transform: rotate(-45deg);
-    -moz-transform: rotate(-45deg);
-    -ms-transform: rotate(-45deg);
+@media (min-width:768px) and (max-width:768px){
+    .border-left{
+        display:none;
+    }
 }
